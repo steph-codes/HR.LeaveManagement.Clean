@@ -11,7 +11,6 @@
     <Folder Include="Features\LeaveType\Commands\CreateLeaveType\" />
     <Folder Include="Features\LeaveType\Commands\DeleteLeaveType\" />
     <Folder Include="Features\LeaveType\Commands\UpdateLeaveType\" />
-    <Folder Include="Features\LeaveType\Queries\GetLeaveTypeDetails\" />
   </ItemGroup>
 
   <ItemGroup>
