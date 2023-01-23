@@ -16,16 +16,4 @@ namespace HR.LeaveManagement.Application.Contracts.Persistence
         Task<T> DeleteAsync(T entity);
     }
 
-    public interface ILeaveTypeRepository : IGenericRepository<LeaveType>
-    {
-       
-    }
-    public interface ILeaveRequestRepository : IGenericRepository<LeaveRequest>
-    {
-
-    }
-    public interface ILeaveAllocationRepository : IGenericRepository<LeaveAllocation>
-    { 
-
-    }
 }
