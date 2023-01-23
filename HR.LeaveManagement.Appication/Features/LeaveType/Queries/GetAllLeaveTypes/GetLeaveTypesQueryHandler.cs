@@ -23,7 +23,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Queries.GetAllLeaveT
         public async Task<List<LeaveTypeDto>> Handle(GetLeaveTypesQuery request, CancellationToken cancellationToken)
         {
             //Query the database
-            var leaveTypes = _leaveTypeRepository.GetAsync();
+            var leaveTypes = await _leaveTypeRepository.GetAsync();
 
             //convert data objects to dto
             var data = _mapper.Map<List<LeaveTypeDto>>(leaveTypes);
