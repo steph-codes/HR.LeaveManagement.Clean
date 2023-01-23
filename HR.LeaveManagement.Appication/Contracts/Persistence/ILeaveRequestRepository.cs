@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.MappingProfiles
+namespace HR.LeaveManagement.Application.Contracts.Persistence
 {
-    public class LeaveTypeProfile
+    public interface ILeaveRequestRepository
     {
     }
 }
