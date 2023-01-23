@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Domain", "HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj", "{805E307E-5464-42EC-966C-AFCFF9C1976D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Application", "HR.LeaveManagement.Appication\HR.LeaveManagement.Application.csproj", "{0E0C9361-76F1-4532-964B-8A739036495D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.LeaveManagement.Application", "HR.LeaveManagement.Application\HR.LeaveManagement.Application.csproj", "{5F1E651D-463D-43A4-BEC7-A74DE007D059}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{805E307E-5464-42EC-966C-AFCFF9C1976D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{805E307E-5464-42EC-966C-AFCFF9C1976D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{805E307E-5464-42EC-966C-AFCFF9C1976D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E0C9361-76F1-4532-964B-8A739036495D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E0C9361-76F1-4532-964B-8A739036495D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E0C9361-76F1-4532-964B-8A739036495D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E0C9361-76F1-4532-964B-8A739036495D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1E651D-463D-43A4-BEC7-A74DE007D059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1E651D-463D-43A4-BEC7-A74DE007D059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1E651D-463D-43A4-BEC7-A74DE007D059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1E651D-463D-43A4-BEC7-A74DE007D059}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,7 +43,7 @@ Global
 		{1DEC60A0-3D11-44E0-BC3F-D867F78E8958} = {BCBA7CA5-BD5C-4553-9C54-C412C5E95695}
 		{3A5A0EDE-E53B-42EA-900C-2DC91C35229C} = {BCBA7CA5-BD5C-4553-9C54-C412C5E95695}
 		{805E307E-5464-42EC-966C-AFCFF9C1976D} = {13253586-6B9B-4FC2-B9FA-36EC443DD9AC}
-		{0E0C9361-76F1-4532-964B-8A739036495D} = {13253586-6B9B-4FC2-B9FA-36EC443DD9AC}
+		{5F1E651D-463D-43A4-BEC7-A74DE007D059} = {13253586-6B9B-4FC2-B9FA-36EC443DD9AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD32DACE-210B-4747-953D-3A92DCDC76C9}
