@@ -28,8 +28,8 @@ namespace HR.LeaveManagement.Persistence.DatabaseContext
             base.OnModelCreating(modelBuilder);
         }
 
-        // option -- update the time each time SaveChnagesAsync is invoked
 
+        // optional -- update the time each time SaveChnagesAsync is invoked considering all models fetch from BasEntity
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             foreach (var entry in base.ChangeTracker.Entries<BaseEntity>()

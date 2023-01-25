@@ -25,6 +25,7 @@ namespace HR.LeaveManagement.Persistence.Configurations
                 }
             );
 
+            // database level validation
             builder.Property(q => q.Name)
                 .IsRequired()
                 .HasMaxLength(100);
