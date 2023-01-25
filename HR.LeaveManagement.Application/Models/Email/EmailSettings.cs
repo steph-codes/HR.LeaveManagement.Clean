@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Application.Models.Email
 {
-    internal class EmailSettings
+    public class EmailSettings
     {
+        public string ApiKey { get; set; }
+        public string FromAddress { get; set; }
+        public string FromName { get; set; }
     }
 }
