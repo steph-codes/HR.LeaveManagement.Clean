@@ -22,12 +22,12 @@ namespace HR.LeaveManagement.Persistence.Repositories
             await _context.SaveChangesAsync();
         }
 
-        //public async Task<bool> AllocationExists(string userId, int leaveTypeId, int period)
-        //{
-        //    return await _context.LeaveAllocations.AnyAsync(q => q.EmployeeId == userId
-        //                                && q.LeaveTypeId == leaveTypeId
-        //                                && q.Period == period);
-        //}
+        public async Task<bool> AllocationExists(string userId, int leaveTypeId, int period)
+        {
+            return await _context.LeaveAllocations.AnyAsync(q => q.EmployeeId == userId
+                                        && q.LeaveTypeId == leaveTypeId
+                                        && q.Period == period);
+        }
 
         public async Task<List<LeaveAllocation>> GetLeaveAllocationsWithDetails()
         {
@@ -37,13 +37,13 @@ namespace HR.LeaveManagement.Persistence.Repositories
             return leaveAllocations;
         }
 
-        //public async Task<List<LeaveAllocation>> GetLeaveAllocationsWithDetails(string userId)
-        //{
-        //    var leaveAllocations = await _context.LeaveAllocations.Where(q => q.EmployeeId == userId)
-        //       .Include(q => q.LeaveType)
-        //       .ToListAsync();
-        //    return leaveAllocations;
-        //}
+        public async Task<List<LeaveAllocation>> GetLeaveAllocationsWithDetails(string userId)
+        {
+            var leaveAllocations = await _context.LeaveAllocations.Where(q => q.EmployeeId == userId)
+               .Include(q => q.LeaveType)
+               .ToListAsync();
+            return leaveAllocations;
+        }
 
         public async Task<LeaveAllocation> GetLeaveAllocationWithDetails(int id)
         {
@@ -54,10 +54,10 @@ namespace HR.LeaveManagement.Persistence.Repositories
             return leaveAllocation;
         }
 
-        //public async Task<LeaveAllocation> GetUserAllocations(string userId, int leaveTypeId)
-        //{
-        //    return await _context.LeaveAllocations.FirstOrDefaultAsync(q => q.EmployeeId == userId
-        //                                && q.LeaveTypeId == leaveTypeId);
-        //}
+        public async Task<LeaveAllocation> GetUserAllocations(string userId, int leaveTypeId)
+        {
+            return await _context.LeaveAllocations.FirstOrDefaultAsync(q => q.EmployeeId == userId
+                                        && q.LeaveTypeId == leaveTypeId);
+        }
     }
 }
