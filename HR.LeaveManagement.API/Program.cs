@@ -12,9 +12,20 @@ builder.Services.AddPersistenceServices(builder.Configuration);
 
 
 builder.Services.AddControllers();
+
+//Cors lets us take control of what kind of request we want for our API (a from of security)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("all", builder => builder.AllowAnyOrigin()
+    .AllowAnyHeader()
+    .AllowAnyMethod());
+});
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
 
