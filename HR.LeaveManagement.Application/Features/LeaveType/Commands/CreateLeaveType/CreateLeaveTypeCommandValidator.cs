@@ -24,8 +24,8 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeave
                 .MaximumLength(70).WithMessage("{PropertyName} must be fewer than 70 characters");
 
             RuleFor(p => p.DefaultDays)
-                .GreaterThan(100).WithMessage("{PropertyName} cannot exceed 100")
-                .LessThan(1).WithMessage("{PropertyName} cannot be less than 1");
+                .LessThan(100).WithMessage("{PropertyName} cannot exceed 100")
+                .GreaterThan(1).WithMessage("{PropertyName} cannot be less than 1");
 
             //validation for interface method checks if data exist
             RuleFor(q => q)
@@ -37,6 +37,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeave
 
         private Task<bool> LeaveTypeNameUnique(CreateLeaveTypeCommand command, CancellationToken token)
         {
+
             return _leaveTypeRepository.IsLeaveTypeUnique(command.Name);
         }
     }
