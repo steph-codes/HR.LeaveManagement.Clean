@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.Leavemanagement.Infrastructure.Logging
+namespace HR.LeaveManagement.Infrastructure.Logging
 {
     public class LoggerAdapter<T> : IAppLogger<T>
     {

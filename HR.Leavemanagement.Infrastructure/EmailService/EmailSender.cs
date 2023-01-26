@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.Leavemanagement.Infrastructure.EmailService
+namespace HR.LeaveManagement.Infrastructure.EmailService
 {
     public class EmailSender : IEmailSender
     {
