@@ -27,6 +27,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.Updat
                 .GreaterThan(0)
                 .MustAsync(LeaveTypeMustExist)
                 .WithMessage("{PropertyName} does not exist.");
+            //Allocation must exist that's why we are updating
 
             RuleFor(p => p.Id)
                 .NotNull()

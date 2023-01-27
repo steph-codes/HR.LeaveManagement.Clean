@@ -9,6 +9,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.Creat
 {
     public class CreateLeaveAllocationCommand : IRequest<Unit>
     {
+        //that's why this is important, the kind of leave you want to go for 
         public int LeaveTypeId { get; set; }
     }
 }
