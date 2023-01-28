@@ -19,6 +19,8 @@ namespace HR.LeaveManagement.Application.Features.LeaveRequest.Commands.UpdateLe
             _leaveTypeRepository = leaveTypeRepository;
             _leaveRequestRepository = leaveRequestRepository;
 
+            //we are including all the rules from the BaseLeaveRequestValidator
+
             Include(new BaseLeaveRequestValidator(_leaveTypeRepository));
 
             RuleFor(p => p.Id)
