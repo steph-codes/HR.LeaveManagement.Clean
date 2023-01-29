@@ -14,15 +14,17 @@ namespace HR.LeaveManagement.Application.Exceptions
             
         }
 
-        public List<string> ValidationErrors { get; set; }
+        //public List<string> ValidationErrors { get; set; }
+        public IDictionary<string, string[]> ValidationErrors { get; set; }  //key string key name, value is the list of errors for that key
         public BadRequestException( string message, ValidationResult validationResult ) : base(message)
         {
-            ValidationErrors = new();
-            foreach ( var error in validationResult.Errors)
-            { 
-                //Add error from the loop into the list of ValidationError
-                ValidationErrors.Add(error.ErrorMessage);
-            }
+            //ValidationErrors = new();
+            //foreach ( var error in validationResult.Errors)
+            //{ 
+            //    //Add error from the loop into the list of ValidationError
+            //    ValidationErrors.Add(error.ErrorMessage);
+            //}
+            ValidationErrors = validationResult.ToDictionary();
             
         }
     }
