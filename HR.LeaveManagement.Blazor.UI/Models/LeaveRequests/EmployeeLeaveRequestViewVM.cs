@@ -1,6 +1,6 @@
-﻿using HR.LeaveManagement.BlazorUI.Models.LeaveAllocations;
+﻿using HR.LeaveManagement.Blazor.UI.Models.LeaveAllocations;
 
-namespace HR.LeaveManagement.BlazorUI.Models.LeaveRequests
+namespace HR.LeaveManagement.Blazor.UI.Models.LeaveRequests
 {
     public class EmployeeLeaveRequestViewVM
     {

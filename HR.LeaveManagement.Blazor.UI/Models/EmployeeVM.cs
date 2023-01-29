@@ -1,4 +1,4 @@
-﻿namespace HR.LeaveManagement.BlazorUI.Models
+﻿namespace HR.LeaveManagement.Blazor.UI.Models
 {
     public class EmployeeVM
     {

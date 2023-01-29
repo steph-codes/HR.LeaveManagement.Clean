@@ -1,7 +1,7 @@
-﻿using HR.LeaveManagement.BlazorUI.Contracts;
-using HR.LeaveManagement.BlazorUI.Services.Base;
+﻿using HR.LeaveManagement.Blazor.UI.Contracts;
+using HR.LeaveManagement.Blazor.UI.Services.Base;
 
-namespace HR.LeaveManagement.BlazorUI.Services
+namespace HR.LeaveManagement.Blazor.UI.Services
 {
     public class LeaveAllocationService : BaseHttpService, ILeaveAllocationService
     {

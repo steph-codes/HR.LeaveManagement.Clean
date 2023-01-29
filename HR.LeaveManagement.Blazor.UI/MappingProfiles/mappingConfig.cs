@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using HR.LeaveManagement.BlazorUI.Models.LeaveAllocations;
-using HR.LeaveManagement.BlazorUI.Models.LeaveRequests;
-using HR.LeaveManagement.BlazorUI.Models.LeaveTypes;
-using HR.LeaveManagement.BlazorUI.Services.Base;
+using HR.LeaveManagement.Blazor.UI.Models.LeaveAllocations;
+using HR.LeaveManagement.Blazor.UI.Models.LeaveRequests;
+using HR.LeaveManagement.Blazor.UI.Models.LeaveTypes;
+using HR.LeaveManagement.Blazor.UI.Services.Base;
 
-namespace HR.LeaveManagement.BlazorUI.MappingProfiles
+namespace HR.LeaveManagement.Blazor.UI.MappingProfiles
 {
     public class mappingConfig : Profile
     {

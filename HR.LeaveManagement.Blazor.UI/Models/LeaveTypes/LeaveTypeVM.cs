@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace HR.LeaveManagement.BlazorUI.Models.LeaveTypes
+namespace HR.LeaveManagement.Blazor.UI.Models.LeaveTypes
 {
     public class LeaveTypeVM
     {

@@ -1,7 +1,7 @@
-﻿using HR.LeaveManagement.BlazorUI.Models.LeaveTypes;
+﻿using HR.LeaveManagement.Blazor.UI.Models.LeaveTypes;
 using System.ComponentModel.DataAnnotations;
 
-namespace HR.LeaveManagement.BlazorUI.Models.LeaveRequests
+namespace HR.LeaveManagement.Blazor.UI.Models.LeaveRequests
 {
    
     public class LeaveRequestVM

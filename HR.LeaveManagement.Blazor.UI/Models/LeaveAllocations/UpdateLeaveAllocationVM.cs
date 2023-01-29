@@ -1,7 +1,7 @@
-﻿using HR.LeaveManagement.BlazorUI.Models.LeaveTypes;
+﻿using HR.LeaveManagement.Blazor.UI.Models.LeaveTypes;
 using System.ComponentModel.DataAnnotations;
 
-namespace HR.LeaveManagement.BlazorUI.Models.LeaveAllocations
+namespace HR.LeaveManagement.Blazor.UI.Models.LeaveAllocations
 {
     public class UpdateLeaveAllocationVM
     {

@@ -1,4 +1,4 @@
-﻿namespace HR.LeaveManagement.BlazorUI.Services.Base
+﻿namespace HR.LeaveManagement.Blazor.UI.Services.Base
 {
     public partial interface IClient
     {

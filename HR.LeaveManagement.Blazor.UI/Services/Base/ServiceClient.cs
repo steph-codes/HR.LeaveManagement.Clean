@@ -4,7 +4,7 @@
 // </auto-generated>
 //----------------------
 
-namespace HR.LeaveManagement.BlazorUI.Services.Base
+namespace HR.LeaveManagement.Blazor.UI.Services.Base
 {
 
 

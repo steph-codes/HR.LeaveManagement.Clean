@@ -1,4 +1,4 @@
-﻿namespace HR.LeaveManagement.BlazorUI.Models.LeaveAllocations
+﻿namespace HR.LeaveManagement.Blazor.UI.Models.LeaveAllocations
 {
     public class CreateLeaveAllocationVM
     {

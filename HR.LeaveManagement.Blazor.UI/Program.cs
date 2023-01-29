@@ -1,7 +1,7 @@
 using HR.LeaveManagement.Blazor.UI;
-using HR.LeaveManagement.BlazorUI.Contracts;
-using HR.LeaveManagement.BlazorUI.Services;
-using HR.LeaveManagement.BlazorUI.Services.Base;
+using HR.LeaveManagement.Blazor.UI.Contracts;
+using HR.LeaveManagement.Blazor.UI.Services;
+using HR.LeaveManagement.Blazor.UI.Services.Base;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 

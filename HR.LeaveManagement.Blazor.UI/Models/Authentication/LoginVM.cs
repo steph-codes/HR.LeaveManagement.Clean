@@ -1,4 +1,4 @@
-﻿namespace HR.LeaveManagement.BlazorUI.Models.Authentication
+﻿namespace HR.LeaveManagement.Blazor.UI.Models.Authentication
 {
     public class LoginVM
     {
