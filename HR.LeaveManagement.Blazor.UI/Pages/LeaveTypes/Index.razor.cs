@@ -35,24 +35,24 @@ namespace HR.LeaveManagement.Blazor.UI.Pages.LeaveTypes
             NavigationManager.NavigateTo($"/leavetypes/details/{id}");
         }
 
-        //protected async Task DeleteLeaveType(int id)
-        //{
-        //    var response = await LeaveTypeService.DeleteLeaveType(id);
-        //    if (response.Success)
-        //    {
-        //        StateHasChanged();
-        //    }
-        //    else
-        //    {
-        //        Message = response.Message;
-        //    }
-        //}
+        protected async Task DeleteLeaveType(int id)
+        {
+            var response = await LeaveTypeService.DeleteLeaveType(id);
+            if (response.Success)
+            {
+                StateHasChanged();
+            }
+            else
+            {
+                Message = response.Message;
+            }
+        }
 
-        
-        //protected override async Task OnInitializedAsync()
-        //{
-               //update the empty Leavetype and then render the leavetype in the db 
-        //    LeaveTypes = await LeaveTypeService.GetLeaveTypes();
-        //}
+        protected override async Task OnInitializedAsync()
+        {
+            //update the empty Leavetype and then render the leavetype in the db
+            LeaveTypes = await LeaveTypeService.GetLeaveTypes();
+        }
+       
     }
 }
