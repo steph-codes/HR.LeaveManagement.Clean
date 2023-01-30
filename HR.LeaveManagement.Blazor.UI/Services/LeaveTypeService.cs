@@ -59,7 +59,7 @@ namespace HR.LeaveManagement.Blazor.UI.Services
 
         public async Task<List<LeaveTypeVM>> GetLeaveTypes()
         {
-            await AddBearerToken();
+           // await AddBearerToken();
             var leaveTypes = await _client.LeaveTypeAllAsync();
             return _mapper.Map<List<LeaveTypeVM>>(leaveTypes);
         }
